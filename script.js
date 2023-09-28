@@ -4,8 +4,6 @@
 function Page() {
     return (
         <div>
-            <h1>Reasons I wanna learn React</h1>
-
             <ul>
                 <li>I wanna do a cool tutorial I've been saving</li>
                 <li>It seems cool to learn this</li>
@@ -26,6 +24,14 @@ function Header() {
     )
 }
 
+function Description() {
+    return (
+        <div>
+            <h1>Reasons I wanna learn React</h1>
+        </div>
+    )
+}
+
 function Footer() {
     return (
         <footer>
@@ -39,6 +45,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
     <div>
         <Header />
+        <Description />
         <Page />
         <Footer />
     </div>
