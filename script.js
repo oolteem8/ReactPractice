@@ -16,6 +16,16 @@ function Page() {
     )
 }
 
+function Header() {
+    return (
+        <header>
+            <nav>
+                <img></img>
+            </nav>
+        </header>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(<Page />)
