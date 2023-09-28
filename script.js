@@ -1,22 +1,21 @@
-// import React from "./react-app/node_modules/react"
-// import ReactDOM from './react-app/node_modules/react-dom/client';
+// import React from 'react'
+// import ReactDOM from 'react-dom'
 
-var navbar = (
-    <div>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width={50}></img>
-        <h1>Fun facts about React</h1>
-        <ul>
-            <li>Was first released in 2013</li>
-            <li>Was originally created by Jordan Walke</li>
-            <li>Has well over 100K stars on Github</li>
-            <li>Is maintained by Facebook</li>
-            <li>Powers thousands of enterprise apps, including mobile apps</li>
-        </ul>
-    </div>
-)
+function Page() {
+    return (
+        <div>
+            <h1>Reasons I wanna learn React</h1>
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+            <ul>
+                <li>I wanna do a cool tutorial I've been saving</li>
+                <li>It seems cool to learn this</li>
+                <li>It looks like it's way better than tradiational HTML, CSS, and JS. It's way more dynamic and way funner, at least from the surface</li>
+                <li>The logo looks cool</li>
+            </ul>
+        </div>
+    )
+}
 
-root.render(
-    navbar
-);
+const root = ReactDOM.createRoot(document.getElementById('root'))
+
+root.render(<Page />)
