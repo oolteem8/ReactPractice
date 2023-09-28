@@ -1,0 +1,65 @@
+@font-face {
+    font-family: queensides;
+    src: url(./queensides-font/QueensidesLight-ZVj3l.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+}
+
+body {
+    color: rgba(255, 255, 255, 0.897);
+    background-color: #000000ee;
+
+    font-family: roboto;
+}
+
+.nav-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-items > div {
+    width: 60px;
+}
+
+.nav-items img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-items ul {
+    display: flex;
+    flex-direction: row;
+
+    padding-left: 200px;
+}
+
+.nav-items li {
+    list-style: none;
+    padding-right: 10px;
+}
+
+.main-header {
+    font-family: queensides;
+}
+
+.facts li {
+    padding-bottom: 10px;
+}
+
+.footer-container {
+    width: 450px;
+    padding-top: 10px;
+}
+
+.footer-container p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    border: 2px solid rgb(136, 0, 0);
+    
+    width: 450px;
+}

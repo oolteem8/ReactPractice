@@ -18,16 +18,16 @@ var navbar = (
 function Navbar() {
     return (
         <header>
-            <nav style={{display: "flex", alignItems: "center"}}>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" 
-                     style={{display: "inline-block", paddingRight: "220px"}} width="50px" />
+            <nav className="nav-items">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"/>
+                </div>
 
-                <ul style={{display: "inline-block", paddingLeft: "5px"}}>
-                    <li style={{display: "inline-block", marginRight: "10px"}}>Pricing</li>
-                    <li style={{display: "inline-block", marginRight: "10px"}}>About</li>
-                    <li style={{display: "inline-block", marginRight: "10px"}}>Contact</li>
+                <ul className="unordered-list">
+                    <li>Pricing</li>
+                    <li>About</li>
+                    <li>Contact</li>
                 </ul>
-
             </nav>
         </header>
     )
@@ -36,8 +36,8 @@ function Navbar() {
 function MainContent() {
     return (
         <div>
-            <h1>Fun facts about React</h1>
-            <ul>
+            <h1 className="main-header">Fun facts about React</h1>
+            <ul className="facts">
                 <li>Was first released in 2013</li>
                 <li>Was originally created by Jordan Walke</li>
                 <li>Has well over 100K stars on Github</li>
@@ -48,11 +48,20 @@ function MainContent() {
     )
 }
 
+function Footer() {
+    return (
+        <div className="footer-container">
+            <p>© oolteem8 development. All rights reserved.</p>
+        </div>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
     <div>
         <Navbar />
         <MainContent />
+        <Footer />
     </div>
 );
