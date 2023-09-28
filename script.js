@@ -20,12 +20,26 @@ function Header() {
     return (
         <header>
             <nav>
-                <img></img>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png" width={50}/>
             </nav>
         </header>
     )
 }
 
+function Footer() {
+    return (
+        <footer>
+            <p>Copyright 2023 oolteem8 development. All rights reserved.</p>
+        </footer>
+    )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
-root.render(<Page />)
+root.render(
+    <div>
+        <Header />
+        <Page />
+        <Footer />
+    </div>
+)
